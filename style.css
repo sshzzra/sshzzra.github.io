@@ -1,0 +1,587 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #0000;
+    
+}
+
+.index.html{
+    background: url(image/hero-zahra.png);
+}
+
+body{
+     background: black; 
+    color: white;
+    justify-content: center;
+    width: 100%;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 65px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: palevioletred;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before {
+    content:"";
+    position:absolute ;
+    top: 0;
+    right: 0;
+    width:100%;
+    height:100% ; 
+    background: black;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 300ms;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: palevioletred;
+    
+}
+
+.home{
+    height: 100vh;
+    /* background: url('image/jar.jpg') no-repeat; */
+    background-color: black;
+    background: url(image/hero-zahra.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content{
+    max-width: 690px;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: palevioletred;
+}
+
+.home-content p{
+    font-size: 16px;
+    font-weight: 200;
+    margin: 20px 0 40px;
+}
+
+
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: palevioletred;
+    border: 2px solid palevioletred;
+    border-radius: 8px;
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 5s;
+}
+
+.btn-box a:hover{
+    color: p;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: palevioletred;
+}
+
+.btn-box a:nth-child(2):hover{
+    color: pink;
+}
+
+.btn-box a:nth-child(2)::before{
+    background: palevioletred;
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: pink;
+    z-index: -1;
+    transition: 3s;
+}
+
+.btn-box a:hover:before{
+    width: 100%;
+}
+    
+.home-sci {
+    width: 90%;
+    position: absolute;
+    bottom: 40px;
+    left: 138px;
+    /* background: pink; */
+    display: flex;
+    gap: 40px;
+}
+.contact-sci {
+    position: absolute;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:450px;
+    
+
+}
+
+.contact-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin:5px;
+    background: transparent;
+    border: 2px solid pink;
+    border-radius: 50%;
+    font-size: 30px;
+    color: pink;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid pink;
+    border-radius: 50%;
+    font-size: 20px;
+    color: pink;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.home-sci a:hover {
+    color: black;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: pink;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+.home-scii a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid pink;
+    border-radius: 50%;
+    font-size: 20px;
+    color: pink;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    margin:0px 40px;
+    
+}
+
+.home-scii a:hover {
+    color: black;
+}
+
+.home-scii a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: pink;
+    z-index: -1;
+    transition: 0.5s;
+    margin:0px 40px;
+}
+
+.home-scii a:hover::before {
+    width: 100%;
+}
+
+.home-imgHover {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 500px;
+    height: 100%;
+    background: transparent;
+    /* border: 2px solid pink; */
+    transition: 3s;
+}
+
+.home-imgHover:hover {
+    background: black;
+    opacity: .8;
+}
+
+.home-kanan {
+    display: flex;
+    width: 200px;
+
+}
+.contact-sci-icon {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    /* background: pink; */
+    display: flex;
+    justify-content: space-between;
+   margin-left:600px;
+   margin-bottom:250px;
+}
+
+.contact-sci-icon a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid pink;
+    border-radius: 50%;
+    font-size: 20px;
+    color: pink;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.contact-sci-icon a:hover {
+    color: black;
+}
+
+.contact-sci-icon a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: pink;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+/*animasi*/
+@keyframes showRight{
+    100%{
+        width: 0;
+    }
+}
+
+.about{
+    border: 1px solid;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-content{
+    width: 79%;
+    margin: 0 auto;
+    border: 5px solid palevioletred;
+    padding: 50px;
+}
+
+.card
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+
+
+
+.skills{
+    background: var(--second-bg-color);
+    color:var(--bg-color);
+   
+  }
+  .skill-main{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap:30px;
+    grid-row-gap:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .skill-left{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap:wrap;
+    margin:150px 0px;
+  }
+
+  .skill-left .card:hover h1{
+      color: white;
+    }
+    .skill-left .card:hover{
+        background-color: palevioletred;
+    }
+    .skill-left .card h1{
+        color: palevioletred;
+    }
+    .skill-left .card{
+      transition: all 300ms;
+    width:40%;
+    margin:5px;
+    padding:5px;
+    text-align: center;
+    border: 1px solid palevioletred;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .profesional{
+    margin:0 30px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  
+  }
+  .box{
+    margin:10px 0;
+    flex:1 1 15rem;
+    position:relative;
+  }
+  .circle{
+    width:100%;
+    height:120px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  
+  
+  }
+  .box .text{
+    text-align:center;
+    color:#000000;
+    font-size:1rem;
+  }
+  .box .text big{
+    font:400;
+    letter-spacing:1px;
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50% , -50%);
+  }
+  .box .text small{
+    display:block;
+    font-weight: 600;
+  }
+  .circle .points{
+    width:5px;
+    height:10px;
+    background-color: var(--bg-color);
+    position:absolute;
+    border-radius:3px;
+    transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
+    animation:glow 0.04s linear forwards;
+    animation-delay:calc(var(--i)*0.05s);
+  }
+
+  .profil{
+    height: 100vh;
+    /* background: url('image/jar.jpg') no-repeat; */
+    background-color: black;
+  /*  background: url(image/hero-zahra.png);*/
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+  }
+  .portfolio{
+    overflow: hidden;
+  }
+
+/*.wrapper{
+    width: 80%;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.section-header{
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    font-size: 55px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.content{
+    padding: 10%;
+}
+
+.content h2{
+    font-size: 30px;
+    text-transform: lowercase;
+    margin-bottom: 15px;
+}
+
+.content p{
+    line-height: 1.5;
+    align-items: center;
+    display: flex;
+}
+
+.main-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min-max(300PX,1fr));
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+}
+
+.main-content .box{
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 15px;
+    box-shadow: 15px 15px 40px rgba(#0000);
+    height: 250px;
+    overflow: hidden;
+}
+
+.main-content .box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.main-content .box:hover::before{
+    top: 0;
+    right: calc(100%-5px);
+    z-index: 8;
+}
+
+.main-content .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-content .box .img-text{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 100%;
+    transition: all 0.5s ease-in-out;
+}*/
+.galeri{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:25px;   
+}
+.image{
+    width: 80%;
+    margin: 50px auto 0 auto    ; 
+    overflow: hidden;
+}
+.galeri img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid white;
+    box-shadow: 1px 2px 3px solid pink;
+    border-radius: 10px;
+}
+
